@@ -47,10 +47,12 @@ See the README file for directions. You'll need python 2.7 and [pip 1.4 or later
    
    ```
 3. Setup enviroment
+
    ```shell
    cd bottle-gae-base-project 
    source setup.sh
    ```
+   
 4. Run the dev server 
    ```shell
    fab run_server
