@@ -57,14 +57,15 @@ See the README file for directions. You'll need python 2.7 and [pip 1.4 or later
    ```
    
    Fabric Available commands:
-
-    babel_compile         compile all locales
-    babel_extract         extract terms to be transalated
-    babel_extract_update  extract terms and update all po files
-    babel_init            initialize a locale - use it carefully it overwrites your current po file
-    babel_update          update po transtation files
-    deploy                deploy app to the cloud -  don't forget to edit the fabfile.py to add you app id
-    run_server            start dev server
+   ```
+    babel_compile             compile all locales
+    babel_extract             extract terms to be transalated
+    babel_extract_update      extract terms and update all po files
+    babel_init                initialize a locale - use it carefully it overwrites your current po file
+    babel_update              update po transtation files
+    deploy                    deploy app to the cloud -  don't forget to edit the fabfile.py to add you app id
+    run_server                start dev server
+    ```
 
 ## Deploy
 To deploy the application:
