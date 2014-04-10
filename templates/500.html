@@ -1,0 +1,10 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+	{{ _("Error 500.") }} {{ _("Internal Server Error") }}
+	{% if is_dev %}
+		<br />
+		<br />
+		{{ error.traceback.replace("\n","<br />") }}
+	{% endif %}
+{% endblock %}

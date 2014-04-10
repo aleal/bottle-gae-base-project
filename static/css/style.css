@@ -1,0 +1,28 @@
+.header{
+	border-bottom: 1px solid black;
+}
+
+.footer{
+	border-top: 1px solid black;
+}
+
+.menu{
+	float:right;
+}
+
+.content{
+	height: 500px;
+	padding: 50px;
+}
+
+.login {
+	float: right;
+}
+
+input[type=text] {
+	width: 450px;
+}
+
+.field-error{
+	color: red;
+}

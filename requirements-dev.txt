@@ -1,0 +1,6 @@
+# This requirements file lists all dependecies for development environment only.
+#
+# Run 'pip install -r requirements-dev.txt' to install these dependencies
+Babel==1.3
+Fabric==1.8.3
+

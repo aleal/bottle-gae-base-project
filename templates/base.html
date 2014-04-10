@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ lang() }}">
+<head>
+  	<title> {{ title or "Bottle + jinja2 + i18n + GAE + federated login" }} </title>
+  	<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+	<div class="header">
+		HEADER
+		<div class="menu">
+		{% block menu %}
+		    {% if lang() == "pt_BR" %}
+				<a href="/en{{ current_path or "/" }}" > {{ _("English") }} </a> 
+			{% else %}
+				<a href="/pt_BR{{ current_path or "/" }}" > {{ _("Portuguese(BR)") }} </a> 
+			{% endif %}
+			{% if user %}
+				|<a href="{{ logout_url }}" > {{ _("Logout") }} </a>
+			{% endif %}
+		{% endblock %}
+		</div>
+	</div>
+	<div class="content" >
+		{% block content %}
+			CONTENT
+		{% endblock %}
+	</div>
+  	<div class="footer"> FOOTER </div>
+</body>
+</html>

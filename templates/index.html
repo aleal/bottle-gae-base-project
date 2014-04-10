@@ -1,0 +1,9 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+<div class="login" >
+	<p> {{ _("Select below your login authentication type") }}: </p>
+	<a href="openid/google" ><img src="/static/imgs/google.png" alt="Google" title="Google" /></a>
+	<a href="openid/yahoo" ><img src="/static/imgs/yahoo.png" alt="Yahoo!" title="Yahoo!" /></a>
+</div>
+{% endblock %}
