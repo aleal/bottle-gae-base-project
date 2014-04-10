@@ -33,21 +33,6 @@ See the README file for directions. You'll need python 2.7 and [pip 1.4 or later
 
 Open [http://localhost:8080](http://localhost:8080)
 
-See [the development server documentation](https://developers.google.com/appengine/docs/python/tools/devserver)
-for options when running dev_appserver.
-
-## Deploy
-To deploy the application:
-
-1. Use the [Admin Console](https://appengine.google.com) to create an app and
-   get the project/app id. (App id and project id are identical)
-1. [Deploy the
-   application](https://developers.google.com/appengine/docs/python/tools/uploadinganapp) with
-
-```
-appcfg.py -A <your-project-id> --oauth2 update .
-```
-
 ### The very easy way ;)
 
 If you are in Unix enviroment...
@@ -81,4 +66,19 @@ See the README file for directions. You'll need python 2.7 and [pip 1.4 or later
     deploy                deploy app to the cloud -  don't forget to edit the fabfile.py to add you app id
     run_server            start dev server
 
+## Deploy
+To deploy the application:
 
+1. Use the [Admin Console](https://appengine.google.com) to create an app and
+   get the project/app id. (App id and project id are identical)
+1. [Deploy the
+   application](https://developers.google.com/appengine/docs/python/tools/uploadinganapp) with
+
+   ```
+   appcfg.py -A <your-project-id> --oauth2 update .
+   ```
+
+2. Or 
+   ```
+   fab deploy
+   ```
